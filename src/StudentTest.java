@@ -1,85 +1,79 @@
-/*
- * ÆÄÀÏ¸í: StudentTest.java
- * ÀÛ¼ºÀÏ: 2018.4.11
- * ÀÛ¼ºÀÚ: ¹Úº´Á¶
- * ³»¿ë: Student Å¬·¡½º¸¦ ÀÌ¿ëÇÑ ÇÁ·Î±×·¥
- */
 import java.util.Scanner;
 
 public class StudentTest {
 
 	public static void main(String[] args) {
-		Scanner scan=new Scanner(System.in);//ÀÔ·Â¹Ş±â À§ÇÑ º¯¼ö »ı¼º
-		Student s1=new Student();//ÇĞ»ı °´Ã¼ s1
-		System.out.print("ÇĞ¹ø ÀÔ·Â:");
-		int schoolNumber1=scan.nextInt();//s1ÇĞ»ıÀÇ ÇĞ¹øÀ» ÀÔ·Â¹ŞÀ½
+		Scanner scan=new Scanner(System.in);//ì…ë ¥ë°›ê¸° ìœ„í•œ ë³€ìˆ˜ ìƒì„±
+		Student s1=new Student();//í•™ìƒ ê°ì²´ s1
+		System.out.print("í•™ë²ˆ ì…ë ¥:");
+		int schoolNumber1=scan.nextInt();//s1í•™ìƒì˜ í•™ë²ˆì„ ì…ë ¥ë°›ìŒ
 		scan.nextLine();
-		System.out.print("ÀÌ¸§ ÀÔ·Â:");
-		String name1=scan.nextLine();//s1ÇĞ»ıÀÇ ÀÌ¸§À» ÀÔ·Â¹ŞÀ½
-		System.out.print("¼ºÀû ÀÔ·Â:");
-		double grade1=scan.nextDouble();//s1ÇĞ»ıÀÇ ¼ºÀûÀ» ÀÔ·Â¹ŞÀ½
-		s1.setNumber(schoolNumber1);//ÀÔ·Â¹ŞÀº ÇĞ¹øÀ» s1ÇĞ»ıÀÇ ÇĞ¹øÀ¸·Î ÁöÁ¤
-		s1.setName(name1);//ÀÔ·Â¹ŞÀº ÀÌ¸§À» s1ÇĞ»ıÀÇ ÀÌ¸§À¸·Î ÁöÁ¤
-		s1.setGrade(grade1);//ÀÔ·Â¹ŞÀº ¼ºÀûÀ» s1ÇĞ»ıÀÇ ¼ºÀûÀ¸·Î ÁöÁ¤
+		System.out.print("ì´ë¦„ ì…ë ¥:");
+		String name1=scan.nextLine();//s1í•™ìƒì˜ ì´ë¦„ì„ ì…ë ¥ë°›ìŒ
+		System.out.print("ì„±ì  ì…ë ¥:");
+		double grade1=scan.nextDouble();//s1í•™ìƒì˜ ì„±ì ì„ ì…ë ¥ë°›ìŒ
+		s1.setNumber(schoolNumber1);//ì…ë ¥ë°›ì€ í•™ë²ˆì„ s1í•™ìƒì˜ í•™ë²ˆìœ¼ë¡œ ì§€ì •
+		s1.setName(name1);//ì…ë ¥ë°›ì€ ì´ë¦„ì„ s1í•™ìƒì˜ ì´ë¦„ìœ¼ë¡œ ì§€ì •
+		s1.setGrade(grade1);//ì…ë ¥ë°›ì€ ì„±ì ì„ s1í•™ìƒì˜ ì„±ì ìœ¼ë¡œ ì§€ì •
 		
 		System.out.println(" ");
 		
-		Student s2=new Student();//ÇĞ»ı °´Ã¼ s2
-		System.out.print("ÇĞ¹ø ÀÔ·Â:");
-		int schoolNumber2=scan.nextInt();//s2ÇĞ»ıÀÇ ÇĞ¹ø ÀÔ·Â
+		Student s2=new Student();//í•™ìƒ ê°ì²´ s2
+		System.out.print("í•™ë²ˆ ì…ë ¥:");
+		int schoolNumber2=scan.nextInt();//s2í•™ìƒì˜ í•™ë²ˆ ì…ë ¥
 		scan.nextLine();
-		System.out.print("ÀÌ¸§ ÀÔ·Â:");
-		String name2=scan.nextLine();//s2ÇĞ»ıÀÇ ÀÌ¸§ ÀÔ·Â
-		System.out.print("¼ºÀû ÀÔ·Â:");
-		double grade2=scan.nextDouble();//s2ÇĞ»ıÀÇ ¼ºÀû ÀÔ·Â
-		s2.setNumber(schoolNumber2);//ÀÔ·Â¹ŞÀº ÇĞ¹øÀ» s2ÇĞ»ıÀÇ ÇĞ¹øÀ¸·Î ÁöÁ¤
-		s2.setName(name2);//ÀÔ·Â¹ŞÀº ÀÌ¸§À» s2ÇĞ»ıÀÇ ÀÌ¸§À¸·Î ÁöÁ¤
-		s2.setGrade(grade2);//ÀÔ·Â¹ŞÀº ¼ºÀûÀ» s2ÇĞ»ıÀÇ ¼ºÀûÀ¸·Î ÁöÁ¤
+		System.out.print("ì´ë¦„ ì…ë ¥:");
+		String name2=scan.nextLine();//s2í•™ìƒì˜ ì´ë¦„ ì…ë ¥
+		System.out.print("ì„±ì  ì…ë ¥:");
+		double grade2=scan.nextDouble();//s2í•™ìƒì˜ ì„±ì  ì…ë ¥
+		s2.setNumber(schoolNumber2);//ì…ë ¥ë°›ì€ í•™ë²ˆì„ s2í•™ìƒì˜ í•™ë²ˆìœ¼ë¡œ ì§€ì •
+		s2.setName(name2);//ì…ë ¥ë°›ì€ ì´ë¦„ì„ s2í•™ìƒì˜ ì´ë¦„ìœ¼ë¡œ ì§€ì •
+		s2.setGrade(grade2);//ì…ë ¥ë°›ì€ ì„±ì ì„ s2í•™ìƒì˜ ì„±ì ìœ¼ë¡œ ì§€ì •
 		
 		System.out.println(" ");
-		/*s1ÇĞ»ı°ú s2ÇĞ»ıÀÇ ÇĞ¹øÀ» ºñ±³ÇÏ¿© ¾Õ¼± ÇĞ¹øÀ» Ãâ·Â*/
+		/*s1í•™ìƒê³¼ s2í•™ìƒì˜ í•™ë²ˆì„ ë¹„êµí•˜ì—¬ ì•ì„  í•™ë²ˆì„ ì¶œë ¥*/
 		if(s1.getNumber()<s2.getNumber()) {
-			System.out.println("¾Õ¼± ÇĞ¹ø:"+s1.getNumber());
+			System.out.println("ì•ì„  í•™ë²ˆ:"+s1.getNumber());
 		}
 		
 		else if(s2.getNumber()<s1.getNumber()) {
-			System.out.println("¾Õ¼± ÇĞ¹ø:"+s2.getNumber());
+			System.out.println("ì•ì„  í•™ë²ˆ:"+s2.getNumber());
 		}
 		
-		/*s1ÇĞ»ı°ú s2ÇĞ»ıÀÇ ÀÌ¸§À» ºñ±³ÇÏ¿© »çÀüÀûÀ¸·Î ¾Õ¼± ÀÌ¸§À» Ãâ·Â*/
+		/*s1í•™ìƒê³¼ s2í•™ìƒì˜ ì´ë¦„ì„ ë¹„êµí•˜ì—¬ ì‚¬ì „ì ìœ¼ë¡œ ì•ì„  ì´ë¦„ì„ ì¶œë ¥*/
 		if(s1.getName().charAt(0)<s2.getName().charAt(0)) {
-			System.out.println("»çÀüÀûÀ¸·Î ¾Õ¼± ÀÌ¸§:"+s1.getName());
+			System.out.println("ì‚¬ì „ì ìœ¼ë¡œ ì•ì„  ì´ë¦„:"+s1.getName());
 		}
 		
 		else if(s2.getName().charAt(0)<s1.getName().charAt(0)) {
-			System.out.println("»çÀüÀûÀ¸·Î ¾Õ¼± ÀÌ¸§:"+s2.getName());
+			System.out.println("ì‚¬ì „ì ìœ¼ë¡œ ì•ì„  ì´ë¦„:"+s2.getName());
 		}
 		
-		/*s1ÇĞ»ı°ú s2ÇĞ»ıÀÇ ¼ºÀûÀ» ºñ±³ÇÏ¿© ´õ ³ôÀº ¼ºÀûÀ» Ãâ·Â*/
+		/*s1í•™ìƒê³¼ s2í•™ìƒì˜ ì„±ì ì„ ë¹„êµí•˜ì—¬ ë” ë†’ì€ ì„±ì ì„ ì¶œë ¥*/
 		if(s1.getGrade()<s2.getGrade()) {
-			System.out.println("³ôÀº ¼ºÀû:"+s2.getGrade());
+			System.out.println("ë†’ì€ ì„±ì :"+s2.getGrade());
 		}
 		
 		else if(s2.getGrade()<s1.getGrade()) {
-			System.out.println("³ôÀº ¼ºÀû:"+s1.getGrade());
+			System.out.println("ë†’ì€ ì„±ì :"+s1.getGrade());
 		}
 	
-		/*s1ÇĞ»ıÀÇ ÇÕ°İ¿©ºÎ Ãâ·Â*/
+		/*s1í•™ìƒì˜ í•©ê²©ì—¬ë¶€ ì¶œë ¥*/
 		if(s1.pass(1.5)==true) {
-			System.out.println("s1ÇĞ»ıÀº ÇÕ°İÀÔ´Ï´Ù.");
+			System.out.println("s1í•™ìƒì€ í•©ê²©ì…ë‹ˆë‹¤.");
 		}
 		
 		else if(s1.pass(1.5)!=true) {
-			System.out.println("s1ÇĞ»ıÀº ºÒÇÕ°İÀÔ´Ï´Ù.");
+			System.out.println("s1í•™ìƒì€ ë¶ˆí•©ê²©ì…ë‹ˆë‹¤.");
 		}
 		
-		/*s2ÇĞ»ıÀÇ ÇÕ°İ¿©ºÎ Ãâ·Â*/
+		/*s2í•™ìƒì˜ í•©ê²©ì—¬ë¶€ ì¶œë ¥*/
 		if(s2.pass(1.5)==true) {
-			System.out.println("s2ÇĞ»ıÀº ÇÕ°İÀÔ´Ï´Ù.");
+			System.out.println("s2í•™ìƒì€ í•©ê²©ì…ë‹ˆë‹¤.");
 		}
 		
 		else if(s2.pass(1.5)!=true) {
-			System.out.println("s2ÇĞ»ıÀº ºÒÇÕ°İÀÔ´Ï´Ù.");
+			System.out.println("s2í•™ìƒì€ ë¶ˆí•©ê²©ì…ë‹ˆë‹¤.");
 		}
 
 	}
